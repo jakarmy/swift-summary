@@ -1,5 +1,5 @@
 <img src="https://swift.org/assets/images/swift.svg" alt="Swift logo" height="70" >
-# Swift Summary
+# The Swift Summary Book
 A summary of Apple's Swift language written on Playgrounds.
 
 
