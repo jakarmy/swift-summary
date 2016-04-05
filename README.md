@@ -10,7 +10,7 @@ This summary cuts to the chase. It is directly written on the Playgrounds platfo
 You can tinker around with it as much as you like!
 
 
-####Keep in mind that:exclamation:
+####Keep in mind:exclamation:
 The Swift language is still under rapid development, which means that the documentation is changing all the time.
 This summary is up to date with Swift v2.2. This means that, as the language is updated, some sections in the summary might break.
 
