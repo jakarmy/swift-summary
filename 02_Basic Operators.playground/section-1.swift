@@ -22,16 +22,18 @@ let (x, y) = (1, 2)
 let string = "hello, " + "world"
 
 //Nil Coalescing Operator
-//It's equivalent to (a ? b : c), but for optionals
+//Shorthand for (a != nil ? a! : b)
 
 var optional: String? //Currently nil
 
-optional ?? "Some Value"
+// optional = "Some Value" // Uncomment/comment this line and observe what values get printed below
+var value = optional ?? "Value when `optional` is nil"
 
-// if (let optional != nil){
-// 	optional = !optional //Unwrapped value
-// }else{
-// 	optional = "Some Value"
+// above statement is equivalent to below
+// if optional != nil {
+// 	value = optional! //Unwrapped value
+// } else {
+//  	value = "Value when `optional` is nil"
 // }
 
 //Range operators
