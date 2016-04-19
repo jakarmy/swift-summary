@@ -22,7 +22,7 @@ let (x, y) = (1, 2)
 let string = "hello, " + "world"
 
 //Nil Coalescing Operator
-//Shorthand for (a != nil ? a! : b)
+//It's equivalent to (a ? b : c), but for optionals
 
 var optional: String? //Currently nil
 
