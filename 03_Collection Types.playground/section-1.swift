@@ -34,7 +34,7 @@ if shoppingList.isEmpty { //Checks if count == 0
 shoppingList.append("Cow") //At the end of the array
 shoppingList += ["Bird", "Shark"]
 
-shoppingList[4...6] = ["Bananas", "Apples"] //Replace several items at once
+shoppingList[3...4] = ["Bananas", "Apples"] //Replace several items at once
 
 shoppingList.insert("Maple Syrup", atIndex: 0) //Inserts element at index
 
