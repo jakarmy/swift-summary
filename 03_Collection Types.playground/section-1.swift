@@ -34,7 +34,7 @@ if shoppingList.isEmpty { //Checks if count == 0
 shoppingList.append("Cow") //At the end of the array
 shoppingList += ["Bird", "Shark"]
 
-shoppingList[4...6] = ["Bananas", "Apples"] //Replace several items at once
+shoppingList[1...3] = ["Bananas", "Apples", "Strawberries"] //Replace several items at once
 
 shoppingList.insert("Maple Syrup", atIndex: 0) //Inserts element at index
 
@@ -44,7 +44,7 @@ var emptyArray = [Int]() //Initialize empty array
 emptyArray = [] //Also valid
 var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of lenght 3 with zeros
 
-var compundArray = array + emptyArray
+var compoundArray = array + emptyArray
 
 
 //Dictionaries
