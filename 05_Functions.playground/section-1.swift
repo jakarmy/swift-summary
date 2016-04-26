@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     
     //You can use a function types to pass functions as params to other functions.
     func printMathResult(mathFunction: (Int, Int) -> Int, a: Int, b: Int) {
-        println("Result: \(mathFunction(a, b))")
+        print("Result: \(mathFunction(a, b))")
     }
     
     //You can use function type to return functions.
