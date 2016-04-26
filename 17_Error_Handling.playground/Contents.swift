@@ -159,7 +159,7 @@ Disabling Error Propagation
 ===========================
 */
 
-func loadImage(path: String) ->String {
+func loadImage(path: String) throws ->String {
     return "Image"
 }
 

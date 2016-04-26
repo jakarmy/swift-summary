@@ -18,6 +18,7 @@ import UIKit
 
 // Arrays and dictionaries in swift use generics and can be mutable or immutable
 // depending on whether they are assigned to a var or let
+// they are VALUES type and a STRUCT, so must be assigned to new variable when using non mutating internal function
 
 //Arrays
 
@@ -34,7 +35,7 @@ if shoppingList.isEmpty { //Checks if count == 0
 shoppingList.append("Cow") //At the end of the array
 shoppingList += ["Bird", "Shark"]
 
-shoppingList[4...6] = ["Bananas", "Apples"] //Replace several items at once
+shoppingList[2...3] = ["Bananas", "Apples"] //Replace several items at once
 
 shoppingList.insert("Maple Syrup", atIndex: 0) //Inserts element at index
 
@@ -46,6 +47,10 @@ var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of lenght 3 
 
 var compundArray = array + emptyArray
 
+var reverseShoppingList: [String] = shoppingList.reverse()
+
+reverseShoppingList.removeLast() // Remove last item, the other way with removeFirst()
+reverseShoppingList.popLast() // Optional remove last item so that won't crash when array is empty, don't have popFirst()
 
 //Dictionaries
 

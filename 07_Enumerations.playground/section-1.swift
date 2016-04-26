@@ -42,37 +42,24 @@ enum ASCIIControlCharacter: Character {
     case CarriageReturn = "\r"
 }
 
-class ViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        var someEnum = CompassPoint.East
-        
-        //Once the type is known, it can be omitted for reassignment.
-        someEnum = .West
-        
-        print("This is the enum: \(someEnum)")
-        (someEnum == .West) ? print("Equal") : print("Not Equal")
-        
-        var newEnum = Barcode.QRCode("162534")
-        newEnum = Barcode.QRCode("692438")
-        
-        let asciiCode = ASCIIControlCharacter.Tab
-        print("Code is \(asciiCode.rawValue)")
-        
-        //In this case, since it's not guaranteed to find an enum for the specified rawValue, the initializer returns an optional
-        
-        if let lineFeed = ASCIIControlCharacter(rawValue: "\r") {
-            //Do something
-            print(lineFeed)
-        }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+var someEnum = CompassPoint.East
+
+//Once the type is known, it can be omitted for reassignment.
+someEnum = .West
+
+print("This is the enum: \(someEnum)")
+(someEnum == .West) ? print("Equal") : print("Not Equal")
+
+var newEnum = Barcode.QRCode("162534")
+newEnum = Barcode.QRCode("692438")
+
+let asciiCode = ASCIIControlCharacter.Tab
+print("Code is \(asciiCode.rawValue)")
+
+//In this case, since it's not guaranteed to find an enum for the specified rawValue, the initializer returns an optional
+
+if let lineFeed = ASCIIControlCharacter(rawValue: "\r") {
+    //Do something
+    print(lineFeed)
 }
 
