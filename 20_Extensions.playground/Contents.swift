@@ -172,11 +172,12 @@ Subscripts
 */
 
 extension Int {
-    subscript(var digitIndex: Int) -> Int {
+    subscript(digitIndex: Int) -> Int {
+        var index = digitIndex
         var decimalBase = 1
-        while digitIndex > 0 {
+        while index > 0 {
             decimalBase *= 10
-            --digitIndex
+            index -= 1
         }
         return (self / decimalBase) % 10
     }

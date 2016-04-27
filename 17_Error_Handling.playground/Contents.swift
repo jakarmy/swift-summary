@@ -84,7 +84,7 @@ class VendingMachine {
         }
         
         coinsDeposited -= item.price
-        --item.count
+        item.count -= 1
         inventory[name] = item
         dispenseSnack(name)
     }
