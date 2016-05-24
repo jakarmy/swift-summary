@@ -18,7 +18,7 @@ import UIKit
 
 // Arrays and dictionaries in swift use generics and can be mutable or immutable
 // depending on whether they are assigned to a var or let
-// They are VALUE types, so they must be assigned to a new variable when using non mutating internal function
+// Structs are VALUE types, which means that when working with mutating functions, you'll need to store them in "var". Everytime the struct is "mutated", a new struct will be created and stored in that var.
 
 //Arrays
 
@@ -50,7 +50,7 @@ var compundArray = array + emptyArray
 var reversedShoppingList: [String] = shoppingList.reverse()
 
 reversedShoppingList.removeLast() // Removes last item. Remove the first with removeFirst(). No returned value.
-reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it.
+reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note bthat if the array is empty, the returned value is nil.
 
 //Dictionaries
 
