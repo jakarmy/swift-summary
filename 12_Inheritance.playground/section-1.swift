@@ -54,13 +54,13 @@ class Train: Vehicle {
 
 class Car: Vehicle {
     var gear = 1
-    //Here, we are overriding the computed propery, adding new behavior
+    //Here, we are overriding the computed property, adding new behavior
     override var description: String {
         return super.description + " in gear \(gear)"
     }
     
     final func activateAirBags(){
-        // - This is the definotive way of activating air bags.
+        // - This is the definitive way of activating air bags.
     }
 }
 
