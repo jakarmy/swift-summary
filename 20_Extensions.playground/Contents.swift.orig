@@ -173,11 +173,19 @@ Subscripts
 
 extension Int {
     subscript(digitIndex: Int) -> Int {
+<<<<<<< HEAD
+        var digitIndex = digitIndex
+=======
         var index = digitIndex
+>>>>>>> a95249d306c181ad7bd6b22b803217e9f653f0c8
         var decimalBase = 1
         while index > 0 {
             decimalBase *= 10
+<<<<<<< HEAD
+            digitIndex -= 1
+=======
             index -= 1
+>>>>>>> a95249d306c181ad7bd6b22b803217e9f653f0c8
         }
         return (self / decimalBase) % 10
     }

@@ -24,9 +24,16 @@ Superclass deinitializers are always called, even if a subclass does not provide
 class Bank {
     static var coinsInBank = 10_000
     static func vendCoins(numberOfCoinsToVend: Int) -> Int {
+<<<<<<< HEAD
+        var numberOfCoinsToVend = numberOfCoinsToVend
+        numberOfCoinsToVend = min(numberOfCoinsToVend, coinsInBank)
+        coinsInBank -= numberOfCoinsToVend
+        return numberOfCoinsToVend
+=======
         let numberOfCoinsAllowedToVend = min(numberOfCoinsToVend, coinsInBank)
         coinsInBank -= numberOfCoinsAllowedToVend
         return numberOfCoinsAllowedToVend
+>>>>>>> a95249d306c181ad7bd6b22b803217e9f653f0c8
     }
     static func receiveCoins(coins: Int) {
         coinsInBank += coins

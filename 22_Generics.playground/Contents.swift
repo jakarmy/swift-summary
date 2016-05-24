@@ -175,7 +175,7 @@ without knowing what that type is for a specific container.
 */
 
 protocol Container {
-    typealias ItemType
+    associatedtype ItemType
     mutating func append(item: ItemType)
     var count: Int { get }
     subscript(i: Int) -> ItemType { get }
