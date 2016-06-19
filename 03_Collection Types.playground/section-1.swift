@@ -43,7 +43,7 @@ let mapleSyrup = shoppingList.removeAtIndex(0) // Returns removed item
 
 var emptyArray = [Int]() //Initialize empty array
 emptyArray = [] //Also valid
-var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of lenght 3 with zeros
+var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of length 3 with zeros
 
 var compoundArray = array + emptyArray
 
