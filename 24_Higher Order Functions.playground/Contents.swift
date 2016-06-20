@@ -16,7 +16,7 @@ let mappedShort = array.map({ "\($0) in String"})
 mappedShort
 
 
-//: Filter: each value in array must passed a rule to append itself into newly made array
+//: Filter: each value in array must pass a rule to append itself into newly made array
 let filtered = array.filter { (value) -> Bool in
     return value >= 4
 }

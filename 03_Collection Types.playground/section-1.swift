@@ -50,7 +50,7 @@ var compoundArray = array + emptyArray
 var reversedShoppingList: [String] = shoppingList.reverse()
 
 reversedShoppingList.removeLast() // Removes last item. Remove the first with removeFirst(). No returned value.
-reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note bthat if the array is empty, the returned value is nil.
+reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note that if the array is empty, the returned value is nil.
 
 //Dictionaries
 
