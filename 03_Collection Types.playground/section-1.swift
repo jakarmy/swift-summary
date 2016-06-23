@@ -43,14 +43,14 @@ let mapleSyrup = shoppingList.removeAtIndex(0) // Returns removed item
 
 var emptyArray = [Int]() //Initialize empty array
 emptyArray = [] //Also valid
-var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of lenght 3 with zeros
+var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of length 3 with zeros
 
 var compoundArray = array + emptyArray
 
 var reversedShoppingList: [String] = shoppingList.reverse()
 
 reversedShoppingList.removeLast() // Removes last item. Remove the first with removeFirst(). No returned value.
-reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note bthat if the array is empty, the returned value is nil.
+reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note that if the array is empty, the returned value is nil.
 
 //Dictionaries
 

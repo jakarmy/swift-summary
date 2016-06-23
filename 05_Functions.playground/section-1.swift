@@ -46,7 +46,7 @@ func swapTwoInts(inout a: Int, inout b: Int) {
     b = temporaryA
 }
 
-//You can use a function types to pass functions as params to other functions.
+//You can use a function type to pass functions as params to other functions.
 func printMathResult(mathFunction: (Int, Int) -> Int, a: Int, b: Int) {
     print("Result: \(mathFunction(a, b))")
 }

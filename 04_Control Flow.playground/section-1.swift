@@ -78,16 +78,17 @@ default:
 let anotherPoint = (0, 0)
 switch anotherPoint {
 case (let x, 0):
-    print("on the x-axis with an x value of \(x)")
+    print("on the y-axis with an x value of \(x)")
 case (0, let y):
-    print("on the y-axis with a y value of \(y)")
+    print("on the x-axis with a y value of \(y)")
 case let (z, w): //This acts as the default case. Since it is only assigning a tuple, any value matches.
     print("somewhere else at (\(z), \(w))")
 }
 
+// Bind both values, plus test a condition.
 switch anotherPoint {
 case let (x, y) where x == y:
-    print("x = y")
+    print("x = y : \(x) = \(y)")
 default:
     break
 }
