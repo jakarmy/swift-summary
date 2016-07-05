@@ -11,7 +11,6 @@
 
 
 import UIKit
-import CoreBluetooth;
 
 /*
  Classes and structures in Swift have many things in common. Both can:

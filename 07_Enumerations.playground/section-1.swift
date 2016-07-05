@@ -11,7 +11,6 @@
 
 
 import UIKit
-import CoreBluetooth;
 
 /*
  Definition of an Enum
