@@ -48,6 +48,6 @@ for index in 0..<array.count{
 }
 
 // Enumerate array with index and value, C loop will be removed soon
-for (index, value) in array.enumerate() {
+for (index, value) in array.enumerated() {
     print("value \(value) at index \(index)")
 }
