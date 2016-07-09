@@ -11,8 +11,7 @@ You can tinker around with it as much as you like!
 
 
 ####Keep in mind:exclamation:
-The Swift language is still under rapid development, which means that the documentation is changing all the time.
-This summary is up to date with Swift v2.2. This means that, as the language is updated, some sections in the summary might break.
+The Swift language is still under rapid development, which means that the documentation is changing all the time, and some sections might break at a given time.
 
 
 ####You can help too!
