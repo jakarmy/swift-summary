@@ -23,7 +23,7 @@ import UIKit
 //Arrays
 
 var shoppingList: [String] = ["Eggs", "Pigs"]
-shoppingList = ["Eggs", "Pigs"]				//Both are the same
+var anotherShoppingList = ["Eggs", "Pigs"]				//Both are the same
 
 
 if shoppingList.isEmpty { //Checks if count == 0
@@ -42,7 +42,7 @@ shoppingList.insert("Maple Syrup", atIndex: 0) //Inserts element at index
 let mapleSyrup = shoppingList.removeAtIndex(0) // Returns removed item
 
 var emptyArray = [Int]() //Initialize empty array
-emptyArray = [] //Also valid
+var anotherEmptyArray = [] //Also valid
 var array = [Int](count: 3, repeatedValue: 0) //Initalizes an array of length 3 with zeros
 
 var compoundArray = array + emptyArray

@@ -71,7 +71,7 @@ someTuple.number
 someTuple.assertion
 
 
-//Optionals whether have a value or not.
+//Optionals may have a value or not.
 let optional: Int? = 2
 
 if optional != nil {
@@ -80,7 +80,7 @@ if optional != nil {
 } else {
     "It's nil"
 }
-// You can use optional binding as well
+// You can use optional binding to test for an unassigned value as well
 
 if let value = optional {
     "It's not nil!"

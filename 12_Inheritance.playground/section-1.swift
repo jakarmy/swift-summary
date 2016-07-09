@@ -11,7 +11,6 @@
 
 
 import UIKit
-import CoreBluetooth;
 
 //Swift classes do not inherit from a universal base class. Classes you define without specifying a superclass automatically become base classes for you to build upon.
 

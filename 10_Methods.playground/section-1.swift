@@ -11,7 +11,6 @@
 
 
 import UIKit
-import CoreBluetooth;
 
 /*
  There are instance methods and type (class) methods
