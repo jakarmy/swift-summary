@@ -15,8 +15,9 @@ The Swift language is still under rapid development, which means that the docume
 
 
 ####You can help too!
-Help me keep this summary :+1: with the latest versions of Swift!
-
+- Help me keep this summary :+1: by creating pull requests and issues!
+- Share this project and tell your friends to give it a ⭐
+- You can also buy me some coffee or a nice meal 😀 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7S2K2TJNR4F4A)
 
 ###You can find me on
 <img src="http://25.media.tumblr.com/tumblr_m5xo9frXtv1rysqvgo1_1280.png" alt="Web logo" height="17" > http://karmy.co
