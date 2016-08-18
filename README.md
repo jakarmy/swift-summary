@@ -1,4 +1,4 @@
-![alt tag](https://swift.org/assets/images/swift.svg)
+![alt tag](https://dl.dropboxusercontent.com/u/2463687/Swift%20Book%20Logo/swift_brand_logo_4.svg)
 
    ![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)
    ![Swift](https://img.shields.io/badge/swift-v3.0-orange.svg) ![Software](https://img.shields.io/badge/software-Xcode%20%7C%20Playgrounds-blue.svg)
