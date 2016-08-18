@@ -63,7 +63,8 @@ The Swift language is still under rapid development, which means that the docume
 
 
 ##You can help too!
-Help me keep this summary :+1: with the latest versions of Swift!
+* Help me keep this summary :+1: by creating pull requests and issues!
+* Share this project and make sure you and others give it a ⭐
 
 
 ##You can find me on
