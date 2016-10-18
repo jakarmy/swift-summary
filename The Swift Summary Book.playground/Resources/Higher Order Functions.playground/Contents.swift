@@ -29,6 +29,9 @@ let mapped = array.map { (value) -> Int in
 let mappedShort = array.map({ $0 + 1})
 mappedShort
 
+let mappedShort1 = array.map { $0 + 1}
+mappedShort1
+
 
 //: Filter: each value in array must pass a rule to append itself into a newly made array
 let filtered = array.filter { (value) -> Bool in
@@ -38,6 +41,9 @@ let filtered = array.filter { (value) -> Bool in
 let filteredShort = array.filter({ $0 >= 4 })
 filteredShort
 
+let filteredShort1 = array.filter { $0 >= 4 }
+filteredShort1
+
 
 //: Reduce: combining the elements of an array to a single value
 
@@ -46,8 +52,11 @@ let reduced = array.reduce(0) { (value1, value2) -> Int in
     value1 + value2
 }
 
-let reducedShort = array.reduce(0, ({ $0 + $1 }))
-reducedShort
+let reducedShort0 = array.reduce(0, ({ $0 + $1 }))
+reducedShort0
+
+let reducedShort1 = array.reduce(0) { $0 + $1 }
+reducedShort1
 
 let reducedShortest = array.reduce(0, +)
 reducedShortest
@@ -69,3 +78,6 @@ let flatmapped: [[Int]?] = multidimentionalArray.flatMap { (array) in
 
 let flatmappedShort = multidimentionalArray.flatMap({ $0 }) //Remove nil
 flatmappedShort
+
+let flatmappedShort1 = multidimentionalArray.flatMap { $0 } //Remove nil
+flatmappedShort1
