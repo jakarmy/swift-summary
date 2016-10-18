@@ -26,7 +26,7 @@ let mapped = array.map { (value) -> Int in
     return value + 1
 }
 
-let mappedShort = array.map({ "\($0) in String"})
+let mappedShort = array.map({ $0 + 1})
 mappedShort
 
 
@@ -35,7 +35,7 @@ let filtered = array.filter { (value) -> Bool in
     return value >= 4
 }
 
-let filteredShort = array.filter({ $0 > 2 })
+let filteredShort = array.filter({ $0 >= 4 })
 filteredShort
 
 
@@ -46,22 +46,25 @@ let reduced = array.reduce(0) { (value1, value2) -> Int in
     value1 + value2
 }
 
-let reducedShort = array.reduce(0, combine: ({ $0 + $1 }))
+let reducedShort = array.reduce(0, ({ $0 + $1 }))
 reducedShort
 
+let reducedShortest = array.reduce(0, +)
+reducedShortest
+
 // "test" is the starting value
-let reducedShort2 = array.reduce("test", combine: ({ "\($0)\($1)"}))
+let reducedShort2 = array.reduce("test", ({ "\($0)\($1)"}))
 reducedShort2
 
 // Mathematics functions can be used
-let reducedShorter =  array.reduce(1, combine: *)
+let reducedShorter =  array.reduce(1, *)
 
 
 //: Flatmap: supports optionals and squence of sequence
 var multidimentionalArray: [[Int]?] = [[1,2], [3,5], [4], nil]
 
 let flatmapped: [[Int]?] = multidimentionalArray.flatMap { (array) in
-    return array?.count > 1 ? array : []
+    return array != nil && array!.count > 1 ? array : []
 }
 
 let flatmappedShort = multidimentionalArray.flatMap({ $0 }) //Remove nil
