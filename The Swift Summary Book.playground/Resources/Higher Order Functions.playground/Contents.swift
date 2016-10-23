@@ -1,20 +1,22 @@
 
-// |=------------------------------------------------------=|
-//  Copyright (c) 2016 Juan Antonio Karmy.
-//  Licensed under MIT License
-//
-//  See https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ for Swift Language Reference
-//
-//  See Juan Antonio Karmy - http://karmy.co | http://twitter.com/jkarmy
-//
-// |=------------------------------------------------------=|
+/*:
+ [Previous](@previous) | [Next](@next)
+ ****
+ 
+ Copyright (c) 2016 Juan Antonio Karmy.
+ Licensed under MIT License
+ 
+ Official Apple documentation available at [Swift Language Reference](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
+ 
+ See Juan Antonio Karmy - [karmy.co](http://karmy.co) | [@jkarmy](http://twitter.com/jkarmy)
+ 
+ ****
+ */
 
-// Page created by Tien Vu - https://github.com/Tj3n
+//: Page created by Tien Vu - https://github.com/Tj3n
 
-/*
- ====================
- HIGH ORDER FUNCTIONS
- ====================
+/*:
+ # HIGH ORDER FUNCTIONS
  */
 
 import UIKit
@@ -26,10 +28,11 @@ let mapped = array.map { (value) -> Int in
     return value + 1
 }
 
-let mappedShort = array.map({ $0 + 1})
+let mappedShort = array.map({ $0 + 1 })
 mappedShort
 
-let mappedShort1 = array.map { $0 + 1}
+//: This can be written like this since we are passing a Trailing Closure. See the Closures chapter for further information.
+let mappedShort1 = array.map { $0 + 1 }
 mappedShort1
 
 
