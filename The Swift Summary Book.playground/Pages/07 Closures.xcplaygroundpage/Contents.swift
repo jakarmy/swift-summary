@@ -17,20 +17,20 @@
 
 var array = ["John", "Tim", "Steve"]
 
-var reversed = array.sorted(isOrderedBefore: {(s1: String, s2: String) -> Bool in return s1 > s2})
+var reversed = array.sorted(by: {(s1: String, s2: String) -> Bool in return s1 > s2})
 
 //Using type inference, we can omit the params and return types. This is true when passing closures as params to a function.
-reversed = array.sorted(isOrderedBefore: {s1, s2 in return s1 > s2})
+reversed = array.sorted(by: {s1, s2 in return s1 > s2})
 
 //In case of single-expression closures, the return value is implicit, thus the return expression can be omitted.
-reversed = array.sorted(isOrderedBefore: {s1, s2 in s1 == s2})
+reversed = array.sorted(by: {s1, s2 in s1 == s2})
 
 //In the previous examples, the names of the closure's params were explicit. You can use the $X variables to refer to params for the closure.
 //This eliminates the need for the first params list, which makes the body the only relevant part.
-reversed = array.sorted(isOrderedBefore: {$0 == $1})
+reversed = array.sorted(by: {$0 == $1})
 
 //We can even take this to an extreme. String defines its own implementation for the ">" operator, which is really all the closure does.
-reversed = array.sorted(isOrderedBefore: >)
+reversed = array.sorted(by: >)
 
 /*##### TRAILING CLOSURES #####*/
 func someFunctionThatTakesAClosure(closure: () -> ()) {
