@@ -1,29 +1,37 @@
+/*:
+ [Previous](@previous) | [Next](@next)
+ ****
+ 
+ Copyright (c) 2016 Juan Antonio Karmy.
+ Licensed under MIT License
+ 
+ Official Apple documentation available at [Swift Language Reference](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
+ 
+ See Juan Antonio Karmy - [karmy.co](http://karmy.co) | [@jkarmy](http://twitter.com/jkarmy)
+ 
+ ****
+ */
 
-// |=------------------------------------------------------=|
-//  Copyright (c) 2016 Juan Antonio Karmy.
-//  Licensed under MIT License
-//
-//  See https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ for Swift Language Reference
-//
-//  See Juan Antonio Karmy - http://karmy.co | http://twitter.com/jkarmy
-//
-// |=------------------------------------------------------=|
 
-
-//Collection Types
-
-// Playground - noun: a place where people can play
+/*:
+ # Collection Types
+ */
 
 import UIKit
 
-// Arrays and dictionaries in swift use generics and can be mutable or immutable
-// depending on whether they are assigned to a var or let
-// Structs are VALUE types, which means that when working with mutating functions, you'll need to store them in "var". Everytime the struct is "mutated", a new struct will be created and stored in that var.
+/*:
+ Arrays and dictionaries in swift use generics and can be mutable or immutable
+ depending on whether they are assigned to a var or let
+ Structs are VALUE types, which means that when working with mutating functions, you'll need to store them in "var".
+ Everytime the struct is "mutated", a new struct will be created and stored in that var.
+ */
 
-//Arrays
+
+
+//: ## Arrays
 
 var shoppingList: [String] = ["Eggs", "Pigs"]
-var anotherShoppingList = ["Eggs", "Pigs"]				//Both are the same
+var anotherShoppingList = ["Eggs", "Pigs"]		//Both are the same
 
 
 if shoppingList.isEmpty { //Checks if count == 0
@@ -54,7 +62,7 @@ var reversedShoppingList: [String] = shoppingList.reversed()
 reversedShoppingList.removeLast() // Removes last item. Remove the first with removeFirst(). No returned value.
 reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note that if the array is empty, the returned value is nil.
 
-//Dictionaries
+//: ## Dictionaries
 
 var airports: [String: String] = ["JFK": "John F. Kennedy", "SCL": "Arturo Merino Benitez"]
 airports = ["JFK": "John F. Kennedy", "SCL": "Arturo Merino Benitez"] //Also valid
@@ -93,16 +101,18 @@ numbers = [:]     			  //Both do the same
 numbers[16] = "sixteen"
 
 
-// NOTE
+//: ### NOTE
 
-// You can use your own custom types as dictionary key types by making
-// them conform to the Hashable protocol from Swift’s standard library.
-// Types that conform to the Hashable protocol must provide a
-// gettable Int property called hashValue, and must also provide an
-// implementation of the “is equal” operator (==). The value returned by a
-// type’s hashValue property is not required to be the same across different
-// executions of the same program, or in different programs.
-
-// All of Swift’s basic types (such as String, Int, Double, and Bool) are hashable by default
+/*:
+ You can use your own custom types as dictionary key types by making
+ them conform to the Hashable protocol from Swift’s standard library.
+ Types that conform to the Hashable protocol must provide a
+ gettable Int property called hashValue, and must also provide an
+ implementation of the “is equal” operator (==). The value returned by a
+ type’s hashValue property is not required to be the same across different
+ executions of the same program, or in different programs.
+ 
+ All of Swift’s basic types (such as **String**, **Int**, **Double**, and **Bool**) are hashable by default
+ */
 
 
