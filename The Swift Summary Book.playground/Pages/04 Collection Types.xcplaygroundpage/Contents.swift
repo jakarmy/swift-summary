@@ -41,8 +41,10 @@ shoppingList.insert("Maple Syrup", at: 0) //Inserts element at index
 
 let mapleSyrup = shoppingList.remove(at: 0) // Returns removed item
 
-var emptyArray = [Int]() //Initialize empty array
-var anotherEmptyArray = [] //Also valid
+var emptyArray = [Int]() //Initialize empty array, type of elements must be provided
+var anotherEmptyArray: [Int] = [] // Also valid
+var someArray = ["Hello", "World"]
+someArray = [] // This is valid when the context already provides type information
 var array = [Int](repeating: 0, count: 3) //Initalizes an array of length 3 with zeros
 
 var compoundArray = array + emptyArray
