@@ -44,7 +44,7 @@ for index in 1...5 {
 var array = [1,2,3]
 
 for index in 0..<array.count{
-    //It will iterate (array.count - 1) times.
+    //It will iterate array.count times.
 }
 
 // Enumerate array with index and value, C loop will be removed soon
