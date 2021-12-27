@@ -1,4 +1,3 @@
-![swift logo](https://cl.ly/0G1k3W2f1d2n/download/swift_brand_logo.svg)
 
    ![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)
    ![Swift](https://img.shields.io/badge/swift-v3.0-orange.svg) ![Software](https://img.shields.io/badge/software-Xcode%20%7C%20Playgrounds-blue.svg)
@@ -68,11 +67,8 @@ The Swift language is still under rapid development, which means that the docume
 
 
 ## You can find me on
-<img src="http://25.media.tumblr.com/tumblr_m5xo9frXtv1rysqvgo1_1280.png" alt="Web logo" height="17" > http://karmy.co
-
-<img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-512.png" alt="Twitter logo" height="17" > http://twitter.com/jkarmy
-
-Karmy :sunglasses:
+* 🐦 twitter: [@jkarmy](http://twitter.com/jkarmy).
+* ☕️ If you like the open-source work I do, consider [buying me a coffee](https://www.buymeacoffee.com/juankarmy) so I can stay awake and keep typing away!
 
 ## License
 The MIT License (MIT)
